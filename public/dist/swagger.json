@@ -2,13 +2,36 @@
   "swagger": "2.0",
   "info": {
     "title": "Demo App",
-    "description": "",
+    "description": "This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.",
     "contact": {
-        "email": ""
+        "email": "developer@mobcoder.com"
     },
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "termsOfService":"http://swagger.io/terms/",
+    "license":{
+        "name":"Apache 2.0",
+        "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+    }    
   },
   "basePath": "/demo/api/v2",
+  "tags":[
+    {
+    "name":"User",
+    "description":"Operations about user",
+    "externalDocs":{
+        "description":"Find out more about our store",
+        "url":""
+        }
+    },
+    {
+    "name":"Admin",
+    "description":"Operations about user",
+    "externalDocs":{
+        "description":"Find out more about our store",
+        "url":"http://swagger.io"
+        }
+    }
+],  
   "schemes": [
     "http",
     "https"
@@ -287,7 +310,8 @@
         "tags": [
           "User"
         ],
-        "description": "Guest Login",
+        "summary":"Guest Login",
+        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "consumes": [
             "multipart/form-data"
         ],
