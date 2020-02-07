@@ -1,9 +1,9 @@
 console.log("");
 console.log("//************************* Nodejs App 1.0.0 **************************//");
-console.log("");
+console.log("Server Start Date : ",new Date());
 
 //.env file read
-require('dotenv').config();
+require('dotenv').config({ debug: process.env.DEBUG });
 
 //socket
 //require('./lib/socketChat');
