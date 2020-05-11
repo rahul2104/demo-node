@@ -46,9 +46,7 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 ## Env setup
 create .env file in root folder
 
-add this line in .env file for env set
-
-NODE_ENV="local"
+add all key from env.example
 
 ## Database connection
 default database info (mongodb)
